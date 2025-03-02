@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Altziethmers",
+    "slug": "Altziethmers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "GEMINI_API_URL": "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent",
+      "GEMINI_API_KEY": "AIzaSyA2uHXjHLB1pZvtB8JR_qhS4kI5JidJeMY"
+    }
+  }
+}
